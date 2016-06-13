@@ -19,13 +19,13 @@ if(env==='build'){
 
 var config = {
   entry: [
+    './app/test/index.js',
   	'webpack/hot/dev-server',
-    'webpack-dev-server/client?http://localhost:3000',
-  	'./app/index.js',
+    'webpack-dev-server/client?http://localhost:3000'
   ],                //入口文件
   output: {
     path: path.resolve(__dirname, 'dist'),  // 指定编译后的代码位置为 dist/bundle.js
-    filename: 'bundle.js'
+    filename: '[name].bundle.js'
   },
   module: {
     loaders: [
