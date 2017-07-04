@@ -1,0 +1,158 @@
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed: SyntaxError: C:/Users/wangshiping/Desktop/webpacktry/node_modules/html-webpack-plugin/default_index.ejs: Unexpected token (1:1)
+  > 1 | <!DOCTYPE html>
+      |  ^
+    2 | <html>
+    3 |   <head>
+    4 |     <meta charset="UTF-8">
+  :
+  BabelLoaderError: SyntaxError: C:/Users/wangshiping/Desktop/webpacktry/node_modules/html-webpack-plugin/default_index.ejs: Unexpected token (1:1)
+  > 1 | <!DOCTYPE html>
+      |  ^
+    2 | <html>
+    3 |   <head>
+    4 |     <meta charset="UTF-8">
+  
+  - compiler.js:76 
+    [webpacktry]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:291 Compiler.<anonymous>
+    [webpacktry]/[webpack]/lib/Compiler.js:291:10
+  
+  - Compiler.js:494 
+    [webpacktry]/[webpack]/lib/Compiler.js:494:13
+  
+  - Tapable.js:138 next
+    [webpacktry]/[tapable]/lib/Tapable.js:138:11
+  
+  - CachePlugin.js:62 Compiler.<anonymous>
+    [webpacktry]/[webpack]/lib/CachePlugin.js:62:5
+  
+  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:142:13
+  
+  - Compiler.js:491 
+    [webpacktry]/[webpack]/lib/Compiler.js:491:10
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:645 self.applyPluginsAsync.err
+    [webpacktry]/[webpack]/lib/Compilation.js:645:19
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:636 self.applyPluginsAsync.err
+    [webpacktry]/[webpack]/lib/Compilation.js:636:11
+  
+  - Tapable.js:138 next
+    [webpacktry]/[tapable]/lib/Tapable.js:138:11
+  
+  - UglifyJsPlugin.js:230 Compilation.compilation.plugin
+    [webpacktry]/[webpack]/lib/optimize/UglifyJsPlugin.js:230:5
+  
+  - Tapable.js:142 Compilation.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:142:13
+  
+  - Compilation.js:631 self.applyPluginsAsync.err
+    [webpacktry]/[webpack]/lib/Compilation.js:631:10
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:627 sealPart2
+    [webpacktry]/[webpack]/lib/Compilation.js:627:9
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:575 Compilation.seal
+    [webpacktry]/[webpack]/lib/Compilation.js:575:8
+  
+  - Compiler.js:488 
+    [webpacktry]/[webpack]/lib/Compiler.js:488:16
+  
+  - Tapable.js:225 
+    [webpacktry]/[tapable]/lib/Tapable.js:225:11
+  
+  - Compilation.js:477 _addModuleChain
+    [webpacktry]/[webpack]/lib/Compilation.js:477:11
+  
+  - Compilation.js:448 processModuleDependencies.err
+    [webpacktry]/[webpack]/lib/Compilation.js:448:13
+  
+  - next_tick.js:67 _combinedTickCallback
+    internal/process/next_tick.js:67:7
+  
+  - next_tick.js:98 process._tickCallback
+    internal/process/next_tick.js:98:9
+  
+  - From previous event:
+  
+  - compiler.js:69 Object.compileTemplate
+    [webpacktry]/[html-webpack-plugin]/lib/compiler.js:69:10
+  
+  - index.js:47 Compiler.<anonymous>
+    [webpacktry]/[html-webpack-plugin]/index.js:47:40
+  
+  - Tapable.js:229 Compiler.applyPluginsParallel
+    [webpacktry]/[tapable]/lib/Tapable.js:229:14
+  
+  - Compiler.js:483 
+    [webpacktry]/[webpack]/lib/Compiler.js:483:8
+  
+  - Tapable.js:131 Compiler.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compiler.js:476 Compiler.compile
+    [webpacktry]/[webpack]/lib/Compiler.js:476:7
+  
+  - Compiler.js:231 
+    [webpacktry]/[webpack]/lib/Compiler.js:231:10
+  
+  - Compiler.js:383 Compiler.readRecords
+    [webpacktry]/[webpack]/lib/Compiler.js:383:10
+  
+  - Compiler.js:228 
+    [webpacktry]/[webpack]/lib/Compiler.js:228:9
+  
+  - Tapable.js:138 next
+    [webpacktry]/[tapable]/lib/Tapable.js:138:11
+  
+  - CachePlugin.js:35 Compiler.compiler.plugin
+    [webpacktry]/[webpack]/lib/CachePlugin.js:35:59
+  
+  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:142:13
+  
+  - Compiler.js:225 
+    [webpacktry]/[webpack]/lib/Compiler.js:225:8
+  
+  - Tapable.js:138 next
+    [webpacktry]/[tapable]/lib/Tapable.js:138:11
+  
+  - NodeEnvironmentPlugin.js:21 Compiler.compiler.plugin
+    [webpacktry]/[webpack]/lib/node/NodeEnvironmentPlugin.js:21:4
+  
+  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
+    [webpacktry]/[tapable]/lib/Tapable.js:142:13
+  
+  - Compiler.js:222 Compiler.run
+    [webpacktry]/[webpack]/lib/Compiler.js:222:7
+  
+  - webpack.js:359 processOptions
+    [webpacktry]/[webpack]/bin/webpack.js:359:12
+  
+  - webpack.js:363 Object.<anonymous>
+    [webpacktry]/[webpack]/bin/webpack.js:363:1
+  
+  - module.js:20 require
+    internal/module.js:20:19
+  
+  - webpack.js:13 Object.<anonymous>
+    [npm]/[webpack]/bin/webpack.js:13:10
+  
+</pre><script type="text/javascript" src="./dist/bundle3.js"></script><script type="text/javascript" src="./dist/bundle2.js"></script><script type="text/javascript" src="./dist/bundle1.js"></script><script type="text/javascript" src="./dist/bundle.js"></script>
